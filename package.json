@@ -13,5 +13,8 @@
     "consolidate": "latest",
     "express": "latest",
     "watson-developer-cloud": "latest"
+  },
+  "engines":{
+    "node": "6.11.0"
   }
 }
