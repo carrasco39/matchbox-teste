@@ -1,0 +1,17 @@
+{
+  "name": "matchbox-app",
+  "version": "1.0.0",
+  "description": "watson conversation integration",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "carrasco",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "consolidate": "latest",
+    "express": "latest",
+    "watson-developer-cloud": "latest"
+  }
+}

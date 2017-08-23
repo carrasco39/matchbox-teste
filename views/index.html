@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Matchbox</title>
+</head>
+<body>
+
+<form id="send-text">
+    <input type="text" name="message" placeholder="Escreva a mensagem">
+    <input type="submit" value="submit">
+</form>
+
+<div id="result"></div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('#send-text').on("submit",function(){
+            event.preventDefault();
+            $.ajax( {
+                url: '/send-message',
+                contentType: 'application/x-www-form-urlencoded',
+                type: 'POST',
+                data: $('form').serialize(),
+                success: function(data) {
+                    /* do something with items here */
+                    // You will likely want a template so you don't have to format the string by hand
+                    console.log(data);
+                    $('#result').append('resposta: '+ data + '<br>');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
