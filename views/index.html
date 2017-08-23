@@ -23,8 +23,6 @@
                 type: 'POST',
                 data: $('form').serialize(),
                 success: function(data) {
-                    /* do something with items here */
-                    // You will likely want a template so you don't have to format the string by hand
                     console.log(data);
                     $('#result').append('resposta: '+ data + '<br>');
                 }
