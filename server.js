@@ -35,8 +35,6 @@ app.get('/',function (req, res) {
 });
 
 app.post('/send-message', function(req, res){
-    console.log('posting');
-    console.log(req.body.message);
     if(!!req.body.message){
         conversation.message({
             workspace_id: '1e57c1f9-2b68-422b-9cb7-27ccb1d5d45e',
@@ -59,5 +57,5 @@ app.post('/send-message', function(req, res){
 var port = process.env.PORT || 8080;
 ////// RUN
 app.listen(port, function(){
-    console.log("App running on port 3000");
+    console.log("App running on port "+port);
 });

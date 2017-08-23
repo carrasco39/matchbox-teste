@@ -23,7 +23,6 @@
                 type: 'POST',
                 data: $('form').serialize(),
                 success: function(data) {
-                    console.log(data);
                     $('#result').append('resposta: '+ data + '<br>');
                 }
             });
