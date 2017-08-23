@@ -12,7 +12,8 @@
     "body-parser": "^1.17.2",
     "consolidate": "latest",
     "express": "latest",
-    "watson-developer-cloud": "latest"
+    "watson-developer-cloud": "latest",
+    "swig": "^1.4.2"
   },
   "engines":{
     "node": "6.11.0"
